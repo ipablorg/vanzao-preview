@@ -1,0 +1,1 @@
+import{o as e}from"./cn-4U5ta8lp.js";import{rt as t}from"./icons-DplFT8-P.js";import{M as n,f as r,ft as i}from"./index-Dm64wqB9.js";var a=e(t(),1);function o(e){let t=i(()=>n(e)),{isStatic:o}=(0,a.useContext)(r);if(o){let[,n]=(0,a.useState)(e);(0,a.useEffect)(()=>t.on(`change`,n),[])}return t}export{o as t};

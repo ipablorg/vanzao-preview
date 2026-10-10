@@ -1,0 +1,7 @@
+# Redirect permanente: la ruta vieja de la pantalla ahora es dispersiones.
+/withdrawals /dispersions 301
+
+# SPA fallback de Cloudflare Pages: toda ruta sin archivo sirve la app.
+# Las rutas prerenderizadas (/login, /register) existen como archivos estáticos y
+# Cloudflare las sirve antes de evaluar esta regla; /assets/* igualmente.
+/* /index.html 200

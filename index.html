@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanzao-preview/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/vanzao-preview/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/vanzao-preview/apple-touch-icon.png" />
+    <link rel="manifest" href="/vanzao-preview/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#333f48" />
+    <script>
+      // Resuelve el tema antes del primer pintado (sin parpadeo): la elección manual
+      // guardada manda; si no, el tema del sistema. Debe espejar src/hooks/useTheme.ts.
+      ;(function () {
+        try {
+          var t = localStorage.getItem('vanzao.theme')
+          if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          var root = document.documentElement
+          root.dataset.theme = t
+          root.style.colorScheme = t
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'dark' ? '#12181d' : '#333f48')
+        } catch (e) {}
+      })()
+    </script>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- metadatos por defecto (landing): crawlers sin JS y social previews; por ruta los pisa Seo.tsx.
+         Si el prerender no corre (CI sin Chrome), este head es el que ve el mundo. -->
+    <title>Vanzao | Recibe, envía y consolida pagos con Colombia y el mundo</title>
+    <meta
+      name="description"
+      content="Procesador de pagos nacionales e internacionales: recaudo nacional, pagos internacionales y consolidación en una sola plataforma, con operación segura para empresas."
+    />
+    <link rel="canonical" href="https://ipablorg.github.io/vanzao-preview/" />
+    <meta property="og:title" content="Vanzao | Recibe, envía y consolida pagos con Colombia y el mundo" />
+    <meta
+      property="og:description"
+      content="Procesador de pagos nacionales e internacionales: recaudo nacional, pagos internacionales y consolidación en una sola plataforma, con operación segura para empresas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ipablorg.github.io/vanzao-preview/" />
+    <meta property="og:image" content="https://ipablorg.github.io/vanzao-preview/og.png" />
+    <meta property="og:locale" content="es_LA" />
+    <meta property="og:site_name" content="Vanzao" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vanzao | Recibe, envía y consolida pagos con Colombia y el mundo" />
+    <meta
+      name="twitter:description"
+      content="Procesador de pagos nacionales e internacionales: recaudo nacional, pagos internacionales y consolidación en una sola plataforma, con operación segura para empresas."
+    />
+    <meta name="twitter:image" content="https://ipablorg.github.io/vanzao-preview/og.png" />
+    <script type="module" crossorigin src="/vanzao-preview/assets/index-Dm64wqB9.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanzao-preview/assets/cn-4U5ta8lp.js">
+    <link rel="modulepreload" crossorigin href="/vanzao-preview/assets/icons-DplFT8-P.js">
+    <link rel="stylesheet" crossorigin href="/vanzao-preview/assets/index-B4dsUXZP.css">
+    <meta name="robots" content="noindex,nofollow">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

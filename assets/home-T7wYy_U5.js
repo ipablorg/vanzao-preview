@@ -1,0 +1,1 @@
+var e=[{code:`COP`,flag:`CO`,amount:482e4},{code:`USD`,flag:`US`,amount:1248.5},{code:`BRL`,flag:`BR`,amount:6240.75},{code:`PEN`,flag:`PE`,amount:3410.4},{code:`MXN`,flag:`MX`,amount:18640.2}],t={title:`Integra Vanzao con tus sistemas`,subtitle:`Crea tus claves API y conecta tus dispersiones.`,cta:{label:`Ver API`,to:`/api-keys`}};export{e as n,t};
