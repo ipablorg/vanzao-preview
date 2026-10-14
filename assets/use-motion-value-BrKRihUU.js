@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{it as t}from"./icons-Bm0NoNSZ.js";import{at as n,i as r,w as i}from"./react-CgXa-025.js";var a=e(t(),1);function o(e){let t=n(()=>i(e)),{isStatic:o}=(0,a.useContext)(r);if(o){let[,n]=(0,a.useState)(e);(0,a.useEffect)(()=>t.on(`change`,n),[])}return t}export{o as t};

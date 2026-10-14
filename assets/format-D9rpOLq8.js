@@ -1,0 +1,1 @@
+import{c as e,f as t,n,r}from"./intl-BJm8xZzt.js";function i(){return t.language??`es`}function a(e,t,n=i()){return r(e,t,n)}function o(t,n=i()){return e(t,n)}function s(e,t=i()){return n(e,t)}export{o as i,s as n,a as r,i as t};
