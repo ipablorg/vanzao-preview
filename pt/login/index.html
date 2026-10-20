@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="pt-BR" data-theme="light" style="color-scheme: light;"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vanzao-preview/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/vanzao-preview/favicon-32.png">
+    <link rel="apple-touch-icon" href="/vanzao-preview/apple-touch-icon.png">
+    <link rel="manifest" href="/vanzao-preview/manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#333f48">
+    <script>
+      // Resuelve el tema antes del primer pintado (sin parpadeo): la elección manual
+      // guardada manda; si no, el tema del sistema. Debe espejar src/hooks/useTheme.ts.
+      ;(function () {
+        try {
+          var t = localStorage.getItem('vanzao.theme')
+          if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          var root = document.documentElement
+          root.dataset.theme = t
+          root.style.colorScheme = t
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'dark' ? '#12181d' : '#333f48')
+        } catch (e) {}
+      })()
+    </script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- metadatos por defecto (landing): crawlers sin JS y social previews; por ruta los pisa Seo.tsx.
+         Si el prerender no corre (CI sin Chrome), este head es el que ve el mundo. -->
+    
+    
+    
+    <!-- alternates de idioma de la landing (el prerender los re-emite por ruta con el prefijo propio) -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="module" crossorigin="" src="/vanzao-preview/assets/index-BVfudc6d.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/icons-Cm1OWmS1.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/chunk-OB3PAWPO-DZKziKYT.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/cn-C2cHVgVc.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/i18next-DSaYFhM2.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/es-B86ZSNp8.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/useLang-Ms8FRk89.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/LanguageSelector-BVrVSqzF.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/SmoothScroll-Q90dOqh7.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/Button-ch0aeyg1.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/Logo-SIYfCIZQ.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/react-DInsI3w2.js">
+    <link rel="modulepreload" crossorigin="" href="/vanzao-preview/assets/SplitLines-F4_5TZw5.js">
+    <link rel="stylesheet" crossorigin="" href="/vanzao-preview/assets/SmoothScroll-fOJvfYOR.css">
+    <link rel="stylesheet" crossorigin="" href="/vanzao-preview/assets/index-C8hialqM.css">
+    
+  <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/vanzao-preview/assets/albert-sans-latin-wght-normal-BJ0ssN8N.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/vanzao-preview/assets/roboto-latin-wght-normal-ccAYIvAh.woff2"><title>Entrar | Vanzao</title><meta name="description" content="Entre na sua conta Vanzao e opere depósitos, conversão de moedas e desembolsos para contas bancárias em uma só plataforma."><meta name="robots" content="noindex,nofollow"><link rel="canonical" href="https://ipablorg.github.io/vanzao-preview/pt/login"><meta property="og:title" content="Entrar | Vanzao"><meta property="og:description" content="Entre na sua conta Vanzao e opere depósitos, conversão de moedas e desembolsos para contas bancárias em uma só plataforma."><meta property="og:type" content="website"><meta property="og:url" content="https://ipablorg.github.io/vanzao-preview/pt/login"><meta property="og:image" content="https://ipablorg.github.io/vanzao-preview/og.png"><meta property="og:locale" content="es_LA"><meta property="og:site_name" content="Vanzao"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Entrar | Vanzao"><meta name="twitter:description" content="Entre na sua conta Vanzao e opere depósitos, conversão de moedas e desembolsos para contas bancárias em uma só plataforma."><meta name="twitter:image" content="https://ipablorg.github.io/vanzao-preview/og.png"></head>
+  <body>
+    <div id="root"><div class="bg-auth-veil relative flex min-h-dvh flex-col items-center justify-center bg-brand-green-800 pt-safe pb-safe pl-safe pr-safe"><div class="absolute top-4 right-4 pt-safe"><div class="relative"><button type="button" aria-haspopup="menu" aria-expanded="false" aria-label="Mudar idioma" class="inline-flex items-center rounded-full font-medium transition-colors size-11 justify-center border border-white/30 bg-white/10 text-white hover:bg-white/20"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm88,104a87.61,87.61,0,0,1-3.33,24H174.16a157.44,157.44,0,0,0,0-48h38.51A87.61,87.61,0,0,1,216,128ZM102,168H154a115.11,115.11,0,0,1-26,45A115.27,115.27,0,0,1,102,168Zm-3.9-16a140.84,140.84,0,0,1,0-48h59.88a140.84,140.84,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.84a157.44,157.44,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154,88H102a115.11,115.11,0,0,1,26-45A115.27,115.27,0,0,1,154,88Zm52.33,0H170.71a135.28,135.28,0,0,0-22.3-45.6A88.29,88.29,0,0,1,206.37,88ZM107.59,42.4A135.28,135.28,0,0,0,85.29,88H49.63A88.29,88.29,0,0,1,107.59,42.4ZM49.63,168H85.29a135.28,135.28,0,0,0,22.3,45.6A88.29,88.29,0,0,1,49.63,168Zm98.78,45.6a135.28,135.28,0,0,0,22.3-45.6h35.66A88.29,88.29,0,0,1,148.41,213.6Z"></path></svg><span class="text-xs font-semibold tracking-wide">PT</span></button></div></div><a aria-label="Vanzao, ir para o início" class="mb-8 shrink-0" href="/vanzao-preview/pt" data-discover="true"><svg viewBox="0 0 1225.95 246.88" role="img" aria-label="Vanzao" class="h-7 w-auto text-mint-400"><path d="M80.26,246.55c1.66.68,3.54.28,4.78-1L243.22,82.82c2.35-2.42,3.64-5.61,3.64-8.98V4.38c0-1.79-1.07-3.38-2.73-4.06-1.66-.67-3.54-.28-4.78,1l-109.91,113.08c-1.59,1.64-3.72,2.54-6.01,2.54s-4.41-.9-6-2.54h0L7.52,1.33C6.67.46,5.54,0,4.38,0,3.83,0,3.27.11,2.73.33,1.07,1,0,2.59,0,4.38v69.46c0,3.37,1.29,6.56,3.64,8.98l51.07,52.54c14.71,15.14,22.82,35.1,22.82,56.21v50.93c0,1.79,1.07,3.38,2.73,4.06Z" fill="currentColor"></path><path d="M1191.77,82.26c-10.38-6.14-21.87-9.26-34.15-9.26s-23.78,3.11-34.15,9.26c-10.38,6.15-18.72,14.53-24.79,24.91-6.06,10.37-9.13,21.87-9.13,34.16s3.07,23.58,9.13,34.03c6.06,10.47,14.4,18.93,24.79,25.17,10.37,6.22,21.86,9.38,34.15,9.38s23.78-3.11,34.15-9.26c10.38-6.15,18.76-14.57,24.91-25.04,6.14-10.46,9.26-22,9.26-34.28s-3.12-23.57-9.26-34.03c-6.15-10.47-14.53-18.89-24.91-25.04ZM1191.88,161.5c-3.54,6.13-8.36,11.08-14.31,14.7-5.97,3.63-12.68,5.48-19.95,5.48s-13.76-1.84-19.81-5.48c-6.05-3.63-10.87-8.58-14.32-14.71-3.45-6.12-5.21-12.91-5.21-20.17s1.75-14,5.21-20.05c3.45-6.04,8.22-10.98,14.18-14.7,5.98-3.72,12.69-5.61,19.96-5.61s13.98,1.84,19.95,5.48c5.95,3.62,10.77,8.57,14.31,14.7,3.54,6.14,5.34,12.93,5.34,20.18s-1.8,14.04-5.34,20.18Z" fill="currentColor"></path><path d="M1032.52,207.87h27c.53,0,.96-.43.96-.96v-90.98c0-8.52-2.78-16.07-8.27-22.46-5.54-6.44-13.01-11.52-22.21-15.08-9.24-3.58-19.33-5.39-29.98-5.39s-20.86,1.81-29.85,5.39c-8.94,3.56-16.15,8.67-21.43,15.19-4.48,5.52-7.14,11.95-7.92,19.11-.04.37.13.63.24.75.11.12.34.32.72.32h28.4c.39,0,.74-.23.89-.59,1.99-4.76,5.39-8.28,10.12-10.45,5.44-2.5,12.04-3.77,19.59-3.77,8.94,0,16.28,1.67,21.84,4.96,5.72,3.4,8.62,8.73,8.62,15.84v4.04c0,2.38-1.94,4.32-4.32,4.32h-36.29c-11,0-20.67,1.48-28.74,4.38-7.97,2.88-14.13,7.37-18.31,13.34-4.18,5.98-6.3,13.69-6.3,22.92,0,14.63,5.05,25.24,15.02,31.53,10.11,6.39,21.73,9.62,34.51,9.62,9.95,0,18.77-1.93,26.21-5.73,5-2.56,9.17-5.34,12.4-8.29,1.07-.98,2.62-1.23,3.94-.65,1.33.58,2.18,1.9,2.18,3.35v8.32c0,.53.43.96.96.96ZM1030.96,154.41h0c-.7,4.81-2.68,9.33-5.9,13.43-4.05,5.17-9.34,9.37-15.71,12.47-6.37,3.1-13.01,4.67-19.74,4.67-5.4,0-10.18-1.15-14.21-3.43-4.17-2.35-6.56-6.29-7.1-11.69-.54-3.92.25-7.49,2.33-10.56,2.05-3.03,5.32-5.46,9.72-7.22,4.34-1.73,9.84-2.61,16.37-2.61h29.96c1.25,0,2.45.54,3.27,1.49.82.95,1.19,2.21,1.01,3.45Z" fill="currentColor"></path><path d="M804.18,207.87h104.76c.53,0,.96-.43.96-.96v-26.8c0-.53-.43-.96-.96-.96h-60.02c-1.74,0-3.3-1.04-3.98-2.64-.68-1.6-.33-3.45.88-4.69l63.57-65.4c.66-.68,1.02-1.57,1.02-2.51v-27.66c0-.53-.43-.96-.96-.96h-105.02c-.53,0-.96.43-.96.96v26.8c0,.53.43.96.96.96h58.92c1.75,0,3.31,1.04,3.99,2.65.67,1.61.32,3.46-.91,4.7l-62.18,63.09c-.67.68-1.04,1.58-1.04,2.53v29.93c0,.53.43.96.96.96Z" fill="currentColor"></path><path d="M742.48,207.87h29.09c.53,0,.96-.43.96-.96v-81.08c0-10.59-2.55-20.02-7.59-28.04-5.05-8.02-11.88-14.22-20.3-18.43-8.45-4.23-17.62-6.37-27.23-6.37-8.28,0-15.83,1.55-22.44,4.61-4.72,2.19-8.97,4.99-12.61,8.33-1.07.98-2.62,1.24-3.95.65-1.33-.58-2.19-1.9-2.19-3.35v-7c0-.53-.43-.96-.96-.96h-28.77c-.53,0-.96.43-.96.96v130.67c0,.53.43.96.96.96h29.09c.53,0,.96-.43.96-.96v-67.36c0-7.06,1.45-13.54,4.3-19.24,2.86-5.72,6.91-10.3,12.03-13.6,5.13-3.31,11.17-4.98,17.94-4.98,5.56,0,10.77,1.32,15.47,3.94,4.71,2.62,8.48,6.47,11.18,11.44,2.69,4.96,4.06,10.8,4.06,17.37v72.44c0,.53.43.96.96.96Z" fill="currentColor"></path><path d="M581.72,207.87h27c.53,0,.96-.43.96-.96v-90.98c0-8.52-2.78-16.07-8.27-22.46-5.54-6.44-13.01-11.52-22.21-15.08-9.24-3.58-19.33-5.39-29.98-5.39s-20.87,1.81-29.85,5.39c-8.94,3.56-16.15,8.67-21.43,15.19-4.48,5.52-7.14,11.95-7.92,19.11-.04.37.13.63.24.75.11.12.34.32.72.32h28.4c.39,0,.74-.23.89-.59,1.99-4.76,5.39-8.28,10.12-10.45,5.45-2.5,12.04-3.77,19.59-3.77,8.94,0,16.28,1.67,21.84,4.96,5.72,3.4,8.62,8.73,8.62,15.84v4.04c0,2.38-1.94,4.32-4.32,4.32h-36.29c-11,0-20.67,1.48-28.74,4.38-7.97,2.88-14.13,7.37-18.31,13.34-4.18,5.98-6.3,13.69-6.3,22.92,0,14.63,5.05,25.24,15.02,31.53,10.11,6.39,21.73,9.62,34.51,9.62,9.95,0,18.77-1.93,26.21-5.73,5-2.55,9.17-5.34,12.4-8.29,1.07-.98,2.62-1.23,3.94-.65,1.33.58,2.18,1.9,2.18,3.35v8.32c0,.53.43.96.96.96ZM580.16,154.41h0c-.7,4.81-2.68,9.33-5.9,13.43-4.05,5.17-9.34,9.37-15.71,12.47-6.38,3.1-13.02,4.67-19.74,4.67-5.4,0-10.18-1.15-14.21-3.43-4.17-2.35-6.56-6.29-7.1-11.69-.54-3.92.25-7.49,2.33-10.56,2.05-3.03,5.32-5.46,9.72-7.22,4.34-1.73,9.84-2.61,16.37-2.61h29.96c1.25,0,2.45.54,3.27,1.49.82.95,1.19,2.21,1.01,3.45Z" fill="currentColor"></path><path d="M414.12,207.87c1.55,0,2.93-.99,3.42-2.47l52.7-158.32c.14-.41-.02-.72-.13-.87-.11-.15-.35-.4-.78-.4h-30.82c-1.57,0-2.95,1.01-3.43,2.5l-40.65,126.99c-.58,1.8-2.23,3-4.11,3h-.02c-1.89,0-3.54-1.22-4.11-3.03l-39.8-126.95c-.47-1.51-1.86-2.53-3.44-2.53h-31.29c-.43,0-.67.25-.78.4-.11.15-.27.46-.13.86l52.01,158.31c.49,1.48,1.86,2.48,3.42,2.48h47.94Z" fill="currentColor"></path></svg></a><main class="m-4 mt-0 w-full max-w-auth-card rounded-card border border-brand-green-600 bg-brand-green-700 p-6 sm:p-8"><form novalidate="" class="space-y-6"><label class="block"><span class="text-xs font-semibold tracking-wide text-white/70">Endereço de e-mail</span><span class="relative mt-1 block"><input class="peer h-11 w-full border-b bg-transparent pb-1 text-base text-white transition-colors placeholder:text-white/30 focus:outline-none border-white/50" autocomplete="email" inputmode="email" placeholder="voce@empresa.com" required="" type="email" name="email"><span aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-mint-400 transition-transform duration-200 ease-snap peer-focus:scale-x-100"></span></span></label><label class="block"><span class="text-xs font-semibold tracking-wide text-white/70">Senha</span><span class="relative mt-1 block"><input class="peer h-11 w-full border-b bg-transparent pb-1 text-base text-white transition-colors placeholder:text-white/30 focus:outline-none border-white/50 pr-10" autocomplete="current-password" placeholder="••••••••" required="" type="password" name="password"><button type="button" aria-label="Mostrar senha" aria-pressed="false" class="absolute top-1/2 right-0 grid size-9 -translate-y-1/2 place-items-center rounded-full text-white/60 transition-colors hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256"><path d="M251,123.13c-.37-.81-9.13-20.26-28.48-39.61C196.63,57.67,164,44,128,44S59.37,57.67,33.51,83.52C14.16,102.87,5.4,122.32,5,123.13a12.08,12.08,0,0,0,0,9.75c.37.82,9.13,20.26,28.49,39.61C59.37,198.34,92,212,128,212s68.63-13.66,94.48-39.51c19.36-19.35,28.12-38.79,28.49-39.61A12.08,12.08,0,0,0,251,123.13Zm-46.06,33C183.47,177.27,157.59,188,128,188s-55.47-10.73-76.91-31.88A130.36,130.36,0,0,1,29.52,128,130.45,130.45,0,0,1,51.09,99.89C72.54,78.73,98.41,68,128,68s55.46,10.73,76.91,31.89A130.36,130.36,0,0,1,226.48,128,130.45,130.45,0,0,1,204.91,156.12ZM128,84a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,84Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,148Z"></path></svg></button><span aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-mint-400 transition-transform duration-200 ease-snap peer-focus:scale-x-100"></span></span></label><p aria-live="assertive" role="alert" class="text-sm text-danger-light"></p><button class="no-select inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap transition-all duration-200 ease-snap active:scale-[0.97] disabled:pointer-events-none disabled:bg-warm-gray-500 disabled:text-white/80 disabled:shadow-none bg-mint-400 text-accent-ink shadow-mint hover:bg-mint-300 h-[3.25rem] rounded-full px-6 text-base w-full" type="submit">Entrar</button></form></main></div></div>
+  
+
+</body></html>

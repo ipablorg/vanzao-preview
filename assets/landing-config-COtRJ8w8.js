@@ -1,0 +1,1 @@
+var e=`negocio`,t=`productos`;export{e as n,t};
