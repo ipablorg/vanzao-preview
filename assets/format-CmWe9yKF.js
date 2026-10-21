@@ -1,0 +1,1 @@
+import{i as e}from"./useLang-Nlqlrk1Z.js";import{c as t,n,r}from"./intl-BZJ9fuv1.js";function i(){return e.language??`es`}function a(e,t,n=i()){return r(e,t,n)}function o(e,n=i()){return t(e,n)}function s(e,t=i()){return n(e,t)}export{o as i,s as n,a as r,i as t};

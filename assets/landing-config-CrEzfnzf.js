@@ -1,0 +1,1 @@
+var e=`productos`;export{e as t};
