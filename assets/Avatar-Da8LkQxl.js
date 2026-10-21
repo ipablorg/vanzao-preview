@@ -1,0 +1,1 @@
+import{r as e,t}from"./cn-Dpxnxevs.js";var n=e();function r({name:e,className:r}){return(0,n.jsx)(`span`,{className:t(`grid size-9 place-items-center rounded-full bg-mint-400 font-display font-bold text-on-mint`,r),children:e.charAt(0).toUpperCase()})}export{r as t};
