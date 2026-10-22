@@ -1,0 +1,1 @@
+var e=`https://ipablorg.github.io/vanzao-preview`.replace(/\/+$/,``);export{e as t};

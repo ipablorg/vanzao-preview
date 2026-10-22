@@ -1,0 +1,1 @@
+import{m as e}from"./lang-BpYpF5aN.js";var t=`productos`;function n(t){return`${`/vanzao-preview/`.replace(/\/+$/,``)}${e(`/centro-de-ayuda`,t)}`}export{n,t};
